@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <a href="#"><strong>✈️ TravelBloom</strong></a>
+        </div>
+        <div class="nav-links">
+            <a href="travel_recommendation.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <input type="text" id="searchInput" placeholder="Enter a destination or keyword">
+            <button onclick="search()">Search</button>
+            <button onclick="clearResults()">Clear</button>
+        </div>
+    </nav>
+
+    <!-- Social Media Sidebar -->
+    <div class="social-icons">
+        <a href="#"><img src="twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="youtube.png" alt="YouTube"></a>
+    </div>
+
+    <div class="main-content">
+        <!-- Left Column: Homepage intro text -->
+        <div class="left-column">
+          <div class="hero-text">
+            <h1>EXPLORE<br>DREAM<br>DESTINATION</h1>
+            <p>Discover amazing travel spots. Use the search to explore beaches, temples, and countries.</p>
+            <button class="btn">BOOK NOW</button>
+          </div>
+        </div>
+      
+        <!-- Right Column: Results appear here -->
+        <div class="right-column" id="results"></div>
+    </div>      
+
+    <!-- Results Display -->
+    <div id="results" style="margin-top: 550px; padding: 20px;"></div>
+
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('https://images.pexels.com/photos/1239162/pexels-photo-1239162.jpeg?cs=srgb&dl=pexels-mikel-1239162.jpg&fm=jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 100vh;
+    position: relative;
+}
+
+/* Navbar styles */
+nav {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00bfa6;
+}
+
+nav input[type="text"] {
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    margin-right: 10px;
+}
+
+nav button {
+    background-color: #00bfa6;
+    color: #ffffff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: #008f7a;
+}
+
+/* Hero section */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    font-size: 1.1rem;
+}
+
+.hero-text .btn {
+    background-color: #00bfa6;
+    padding: 12px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hero-text .btn:hover {
+    background-color: #008f7a;
+}
+
+/* Social icons */
+.social-icons {
+    position: fixed;
+    top: 40%;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 999;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.2s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px;
+}
+
+
+.left-column {
+    flex: 1;
+    color: white;
+}
+
+.right-column {
+    flex: 1.5;
+    max-height: 500px; /* Adjust this based on design */
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    scroll-behavior: smooth;
+}
+.right-column::-webkit-scrollbar {
+    width: 10px;
+}
+
+.right-column::-webkit-scrollbar-thumb {
+    background-color: #00bcd4;
+    border-radius: 5px;
+}
+
+.right-column::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
