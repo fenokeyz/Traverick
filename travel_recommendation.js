@@ -108,6 +108,7 @@ function getTimeZoneForCity(cityName) {
     if (lower.includes("paulo")) return "America/Sao_Paulo";
     return "UTC"; // fallback
 }
+
 function Searchfocus(){
     document.getElementById("searchInput").focus();
 }
